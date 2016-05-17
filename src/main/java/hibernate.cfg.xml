@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/hibernatedb</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">manager</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="connection.pool_size">1</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        
+        <!-- Default Cache Provider -->
+        <!-- <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property> -->
+        
+        
+        <!-- http://web.archive.org/web/20130117102553/http://www.javacraft.org/2012/03/migrate-to-hibernate-4-ehcache.html -->
+        <property name="hibernate.cache.use_query_cache">true</property>
+		<property name="hibernate.max_fetch_depth">4</property>
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		<property name="hibernate.cache.use_query_cache">true</property>
+		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+        
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo.UserDetails"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo2.UserDetails"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo3.UserDetails"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo4.UserDetails"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo5.UserDetails"></mapping>
+        <mapping class="com.gaurav.hibernate.HibernateDemo5.Vehicle"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo6.UserDetails"></mapping>
+        <mapping class="com.gaurav.hibernate.HibernateDemo6.Vehicle"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo7.UserDetails"></mapping>
+        <mapping class="com.gaurav.hibernate.HibernateDemo7.Vehicle"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo8.UserDetails"></mapping>
+        <mapping class="com.gaurav.hibernate.HibernateDemo8.Vehicle"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo9.UserDetails"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo9.Vehicle"></mapping>
+        <mapping class="com.gaurav.hibernate.HibernateDemo9.TwoWheeler"></mapping>
+        <mapping class="com.gaurav.hibernate.HibernateDemo9.FourWheeler"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo10.Vehicle"></mapping>
+        <mapping class="com.gaurav.hibernate.HibernateDemo10.TwoWheeler"></mapping>
+        <mapping class="com.gaurav.hibernate.HibernateDemo10.FourWheeler"></mapping> --> 
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo11.UserDetails"></mapping> -->     
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo12.UserDetails"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo13.UserDetails"></mapping> -->
+        <!-- <mapping class="com.gaurav.hibernate.HibernateDemo14.UserDetails"></mapping> -->
+        <mapping class="com.gaurav.hibernate.HibernateDemo15.UserDetails"></mapping>
+    </session-factory>
+</hibernate-configuration>
