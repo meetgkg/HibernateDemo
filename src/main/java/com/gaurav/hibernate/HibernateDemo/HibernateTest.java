@@ -9,6 +9,9 @@ import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
 public class HibernateTest {
+	/*
+	 * test
+	 */
 	
 	private static ServiceRegistry serviceRegistry;
 	private static SessionFactory sessionFactory;
